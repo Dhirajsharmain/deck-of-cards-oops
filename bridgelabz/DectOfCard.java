@@ -11,11 +11,16 @@ package bridgelabz;
 
 public class DectOfCard {
 
-    public static String[] cardsSuit = {"Clubs", "Diamonds", "Hearts", "Spades"};
-    public static String[] cardsRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-    public static String[] deck = new String[52];
-    public static void main(String[] args) {
+    private static String[] cardsSuit = {"Club", "Diamond", "Heart", "Spade"};
+    private static String[] cardsRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+    private static String[] deck = new String[52];
 
+    /**
+     * Starting point os this program
+     * @param args
+     */
+    public static void main(String[] args) {
+        String q = "2 of Clubs";
         makeDeck();
     }
 
