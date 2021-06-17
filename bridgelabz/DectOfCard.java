@@ -20,18 +20,7 @@ public class DectOfCard {
      * @param args
      */
     public static void main(String[] args) {
-        String q = "2 of Clubs";
-        makeDeck();
+
     }
 
-    /**
-     * method for Making deck of card
-     */
-    private static void makeDeck(){
-        for (int i = 0; i < cardsRank.length; i++) {
-            for (int j = 0; j < cardsSuit.length; j++) {
-                deck[cardsSuit.length * i + j] = cardsRank[i] + " of " + cardsSuit[j];
-            }
-        }
-    }
 }
