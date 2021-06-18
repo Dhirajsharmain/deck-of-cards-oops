@@ -24,6 +24,10 @@ public class DectOfCard {
      */
     public static void main(String[] args) {
 
+        makeDeck();
+    }
+
+    private static void makeDeck(){
         for ( String i : cardsSuit) {
             for (String j : cardsValue) {
                 deck.add(i + " of " + j);
