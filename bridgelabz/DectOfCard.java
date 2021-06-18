@@ -9,11 +9,14 @@
  */
 package bridgelabz;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 public class DectOfCard {
 
     private static String[] cardsSuit = {"Club", "Diamond", "Heart", "Spade"};
-    private static String[] cardsRank = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
-    private static String[] deck = new String[52];
+    private static String[] cardsValue = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"};
+    private static Set<String > deck = new TreeSet<>();
 
     /**
      * Starting point os this program
@@ -21,6 +24,11 @@ public class DectOfCard {
      */
     public static void main(String[] args) {
 
+        for ( String i : cardsSuit) {
+            for (String j : cardsValue) {
+                deck.add(i + " of " + j);
+            }
+        }
     }
 
 }

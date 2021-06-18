@@ -7,18 +7,19 @@
  * @version 1.0
  * @since 16-06-2021 **********************************************************
  */
-package bridgelabz;
+package bridgelabz.model;
 
 public class Card {
     private String suit;
-    private String rank;
+    private String value;
 
-    public Card(String suit, String rank){
+    public Card(String suit, String value) {
         this.suit = suit;
-        this.rank = rank;
+        this.value = value;
     }
 
     public String getSuit() {
+
         return suit;
     }
 
@@ -26,19 +27,21 @@ public class Card {
         this.suit = suit;
     }
 
-    public String getRank() {
-        return rank;
+    public String getValue() {
+
+        return value;
     }
 
-    public void setRank(String rank) {
-        this.rank = rank;
+    public void setValue(String value) {
+
+        this.value = value;
     }
 
     @Override
     public String toString() {
         return "Card{" +
                 "suit='" + suit + '\'' +
-                ", rank='" + rank + '\'' +
+                ", value='" + value + '\'' +
                 '}';
     }
 }
